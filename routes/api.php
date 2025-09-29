@@ -10,7 +10,7 @@ Route::get('/user', function (Request $request) {
 use App\Http\Controllers\ImportController;
 use App\Http\Controllers\UploadController;
 use App\Http\Controllers\ProductImageController;
-
+use App\Http\Controllers\ProductApiController;
 
 Route::post('/imports/products', [ImportController::class, 'products']);
 
@@ -21,3 +21,6 @@ Route::post('/uploads/{publicId}/complete', [UploadController::class, 'complete'
 
 
 Route::post('/products/{product}/attach-upload/{publicId}', [ProductImageController::class, 'attach']);
+
+
+Route::get('/products', [ProductApiController::class, 'index']);

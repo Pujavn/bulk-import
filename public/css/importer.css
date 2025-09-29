@@ -1,0 +1,160 @@
+/* Layout & base */
+body {
+    font-family: system-ui, -apple-system, Segoe UI, Roboto;
+    padding: 24px;
+    background: #fafafa;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 24px;
+    max-width: 1100px
+}
+
+.row {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    flex-wrap: wrap
+}
+
+/* Controls */
+.btn {
+    background: #111827;
+    color: #fff;
+    border: 0;
+    padding: 8px 14px;
+    border-radius: 10px;
+    cursor: pointer
+}
+
+.btn[disabled] {
+    opacity: .6;
+    cursor: not-allowed
+}
+
+.inp {
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+    padding: 8px 10px
+}
+
+.hidden {
+    display: none
+}
+
+/* Dropzone */
+.dropzone {
+    border: 2px dashed #9ca3af;
+    border-radius: 12px;
+    padding: 24px;
+    text-align: center;
+    background: #f8fafc;
+    transition: background .15s ease
+}
+
+.dropzone.is-over {
+    background: #eef2ff
+}
+
+/* Text & bits */
+.muted {
+    color: #6b7280;
+    font-size: 12px
+}
+
+.mono {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace
+}
+
+pre {
+    background: #0f172a;
+    color: #e5e7eb;
+    padding: 12px;
+    border-radius: 10px;
+    max-height: 220px;
+    overflow: auto
+}
+
+.stat {
+    display: inline-flex;
+    gap: 6px;
+    align-items: center;
+    background: #eef2ff;
+    padding: 6px 10px;
+    border-radius: 999px;
+    margin-right: 8px
+}
+
+/* Widgets */
+progress {
+    width: 260px
+}
+
+/* Spacing helpers (no inline styles) */
+.mt-8 {
+    margin-top: 8px
+}
+
+.mt-10 {
+    margin-top: 10px
+}
+
+.mt-12 {
+    margin-top: 12px
+}
+
+.mb-8 {
+    margin-bottom: 8px
+}
+
+/* Table */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    overflow: hidden
+}
+
+.th,
+.td {
+    padding: 10px 12px;
+    text-align: left;
+    font-size: 14px;
+    border-bottom: 1px solid #e5e7eb
+}
+
+.td-actions {
+    display: flex;
+    gap: 8px
+}
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 2px 8px;
+    border-radius: 999px;
+    font-size: 12px
+}
+
+.badge-ok {
+    background: #ecfdf5;
+    color: #065f46;
+    border: 1px solid #a7f3d0
+}
+
+.badge-no {
+    background: #fef2f2;
+    color: #991b1b;
+    border: 1px solid #fecaca
+}
+
+/* Small button variant */
+.btn-small {
+    padding: 6px 10px;
+    font-size: 12px
+}
