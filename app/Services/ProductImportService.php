@@ -128,7 +128,7 @@ class ProductImportService
         $existing = Product::whereIn('sku', $skus)->pluck('id', 'sku');
 
 
-        \DB::transaction(function () use ($rows) {
+        DB::transaction(function () use ($rows) {
             Product::upsert($rows, ['sku'], ['name', 'price', 'description', 'updated_at']);
         });
 
